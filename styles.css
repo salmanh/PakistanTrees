@@ -1,0 +1,96 @@
+body {
+    font-family: 'Fajer Noori Nastalique';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    direction: rtl; /* For right-to-left language support */
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    position: relative;
+    flex: 1;
+}
+
+.map {
+    max-width: 100%;
+    height: auto;
+}
+
+.region {
+    position: absolute;
+    transition: background-color 0.3s, opacity 0.3s;
+    background-color: rgba(255, 255, 0, 0.3); /* Highlight color */
+}
+
+.north {
+    top: 10%;
+    left: 46%;
+    width: 50%;
+    height: 36%;
+}
+
+.central {
+    top: 45%;
+    left: 35%;
+    width: 35%;
+    height: 10%;
+}
+
+.south {
+    top: 55%;
+    left: 3%;
+    width: 62%;
+    height: 32%;
+}
+
+.facts-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-left: 1px solid #ccc;
+}
+
+*{
+    margin: 0;
+}
+h2 {
+    margin-top: 0;
+    
+}
+
+.fact-content {
+    display: none;
+}
+
+.fact-content.active {
+    display: block;
+}
+
+
+.container2 {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.column {
+    flex: 1;
+    min-width: 100px;
+}
